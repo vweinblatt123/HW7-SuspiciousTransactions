@@ -1,3 +1,31 @@
+INSERT INTO card_holder VALUES
+    (1, 'Robert Johnson'),
+    (2, 'Shane Shaffer'),
+    (3, 'Elizabeth Sawyer'),
+    (4, 'Danielle Green'),
+    (5, 'Sara Cooper'),
+    (6, 'Beth Hernandez'),
+    (7, 'Sean Taylor'),
+    (8, 'Michael Floyd'),
+    (9, 'Laurie Gibbs'),
+    (10, 'Matthew Gutierrez'),
+    (11, 'Brandon Pineda'),
+    (12, 'Megan Price'),
+    (13, 'John Martin'),
+    (14, 'Gary Jacobs'),
+    (15, 'Kyle Tucker'),
+    (16, 'Crystal Clark'),
+    (17, 'Michael Carroll'),
+    (18, 'Malik Carlson'),
+    (19, 'Peter Mckay'),
+    (20, 'Kevin Spencer'),
+    (21, 'Dana Washington'),
+    (22, 'Austin Johnson'),
+    (23, 'Mark Lewis'),
+    (24, 'Stephanie Dalton'),
+    (25, 'Nancy Contreras');
+
+
 INSERT INTO credit_card VALUES
     (3517111172421930, 1),
     (4761049645711555811, 1),
@@ -53,32 +81,6 @@ INSERT INTO credit_card VALUES
     (4319653513507, 25),
     (372414832802279, 25);
 
-INSERT INTO card_holder VALUES
-    (1, 'Robert Johnson'),
-    (2, 'Shane Shaffer'),
-    (3, 'Elizabeth Sawyer'),
-    (4, 'Danielle Green'),
-    (5, 'Sara Cooper'),
-    (6, 'Beth Hernandez'),
-    (7, 'Sean Taylor'),
-    (8, 'Michael Floyd'),
-    (9, 'Laurie Gibbs'),
-    (10, 'Matthew Gutierrez'),
-    (11, 'Brandon Pineda'),
-    (12, 'Megan Price'),
-    (13, 'John Martin'),
-    (14, 'Gary Jacobs'),
-    (15, 'Kyle Tucker'),
-    (16, 'Crystal Clark'),
-    (17, 'Michael Carroll'),
-    (18, 'Malik Carlson'),
-    (19, 'Peter Mckay'),
-    (20, 'Kevin Spencer'),
-    (21, 'Dana Washington'),
-    (22, 'Austin Johnson'),
-    (23, 'Mark Lewis'),
-    (24, 'Stephanie Dalton'),
-    (25, 'Nancy Contreras');
 
 INSERT INTO merchant_category VALUES
     (1, 'restaurant'),
