@@ -22,7 +22,7 @@ The "high_tran_7to9" view in queries.sql shows the 100 highest transactions made
 
 To compare the 7 to 9 am time frame to the rest of the day, we use "high_tran_not7to9" and see far more larger value transactions during these other times of the day. This makes sense, as the fancy, expensive corporate dinners take place later in the evening. While there are more large value transactions, it is hard to say which are fraudulent during this later time frame. Nonetheless, with 8 transactions of $1000 or more in the 7 to 9 am time frame, we can likely conclude there are more fraudulent transactions in this earlier window. 
 
-It is possible more fraudulent transactions occur during the morning hours as fraudsters working remotely in other parts of the world are operating during these times (https://stripe.com/guides/2017-global-fraud-report#fraud-by-day-and-time). Though, it is hard to make such conclusions given our limited dataset.
+It is possible more fraudulent transactions occur during the morning hours as fraudsters working in other parts of the world are operating during these times (https://stripe.com/guides/2017-global-fraud-report#fraud-by-day-and-time). Also, it may be that fraudsters figure people are on their way to work at these times and will not be checking their credit card activity until after work, later in the afternoon, meaning fraudulent transactions will not be detected for several hours. Though, it is hard to make definitive conclusions given our limited dataset.
 
 *What are the top 5 merchants prone to being hacked using small transactions?*
 
