@@ -13,6 +13,15 @@ join transaction as c on b.card = c.card
 where amount < 2.00 
 group by name
 
+-- Count the transactions that are less than $2.00 per credit card
+create view small_tran_cardnumber as
+select a.card, count(*)
+from credit_card as a 
+join transaction as b on a.card = b.card
+where amount < 2.00 
+group by a.card
+
+
 -- Top 100 highest transactions made between 7:00 am and 9:00 am
 create view high_tran_7to9 as 
 select * 
@@ -39,7 +48,9 @@ group by name
 order by count(*) desc
 
 select * from small_tran_cardholder;
+select * from small_tran_cardnumber;
 select * from high_tran_7to9;
 select * from high_tran_not7to9;
 select * from small_tran_merchants;
+
 
