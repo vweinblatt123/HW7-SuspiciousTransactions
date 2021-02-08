@@ -24,3 +24,9 @@ To compare the 7 to 9 am time frame to the rest of the day, we use "high_tran_no
 
 It is possible more fraudulent transactions occur during the morning hours as fraudsters working remotely in other parts of the world are operating during these times (https://stripe.com/guides/2017-global-fraud-report#fraud-by-day-and-time). Though, it is hard to make such conclusions given our limited dataset.
 
+*What are the top 5 merchants prone to being hacked using small transactions?*
+
+Using the "small_tran_merchants" view in queries.sql, we can see the merchants with the largest number of small value transactions (<$2.00) are Wood-Ramirez (with 7 such transactions), Hood-Phillips (6), and Baker Inc (6), followed by 12 merchants with 5 such transactions.
+
+## Data Analysis - Part 2
+
