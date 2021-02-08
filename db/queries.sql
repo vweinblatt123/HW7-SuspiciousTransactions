@@ -21,7 +21,6 @@ join transaction as b on a.card = b.card
 where amount < 2.00 
 group by a.card
 
-
 -- Top 100 highest transactions made between 7:00 am and 9:00 am
 create view high_tran_7to9 as 
 select * 
