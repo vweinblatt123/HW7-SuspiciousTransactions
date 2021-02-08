@@ -52,4 +52,3 @@ select * from high_tran_7to9;
 select * from high_tran_not7to9;
 select * from small_tran_merchants;
 
-
