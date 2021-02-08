@@ -43,13 +43,13 @@ From our box plot above we can see that there quite a few outliers for cardholde
 
 ## Challenge
 
-*Identifying outliers using standard deviation, with a cutoff at +/- 3 std deviations, we can conclude the following:*
+*Identifying outliers using standard deviation, with a cutoff at 3 std deviations, we can conclude the following:*
 
 Cardholder 5 has the following outliers: None
 
 Cardholder 6 has the following outliers: 2108.0, 1398.0, 1379.0, 2001.0, 1856.0
 
-Cardholder 7 has the following outliers: 1685.0000000000002, 1072.0, 1086.0, 1449.0, 2249.0, 1296.0
+Cardholder 7 has the following outliers: 1685.0, 1072.0, 1086.0, 1449.0, 2249.0, 1296.0
 
 ## 
 
@@ -59,5 +59,5 @@ Cardholder 5 has the following outliers: None
 
 Cardholder 6 has the following outliers: 1029.0, 1145.0, 389.0, 2108.0, 1398.0, 1108.0, 1379.0, 2001.0, 1856.0, 1279.0
 
-Cardholder 7 has the following outliers: 1685.0000000000002, 445.0, 1072.0, 543.0, 1086.0, 160.0, 233.0, 1449.0, 2249.0, 1296.0
+Cardholder 7 has the following outliers: 1685.0, 445.0, 1072.0, 543.0, 1086.0, 160.0, 233.0, 1449.0, 2249.0, 1296.0
 
