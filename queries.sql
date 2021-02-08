@@ -4,14 +4,11 @@ select * from merchant;
 select * from merchant_category;
 select * from transaction;
 
-
-select a.name, b.card
+-- Count the transactions that are less than $2.00 per cardholder.
+select name, count(*)
 from card_holder as a
 join credit_card as b on a.id = b.cardholder_id
-
-
-select card, count(*) from transaction where amount < 2.00 group by card
-
-
-
+join transaction as c on b.card = c.card
+where amount < 2.00 
+group by name
 
