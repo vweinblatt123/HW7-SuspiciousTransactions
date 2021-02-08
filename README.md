@@ -16,7 +16,7 @@ Given the merchants in our dataset are restuarants, bars, coffee shops, pubs, an
 
 *What are the top 100 highest transactions made between 7:00 am and 9:00 am? Do you see any anomalous transactions that could be fraudulent?*
 
-The "high_tran_7to9" view in queries.sql shows the 100 highest transactions made between 7 and 9 am. Of note, there are 12 transactions of $100 or more, and 8 transactions of \\\$1,000 or more. Again, since the transactions are at restuarants and bars, it would seem odd to have these large sized transactions at this time in the morning. However, it is possible the card was used to bring in breakfast for the entire office one day.
+The "high_tran_7to9" view in queries.sql shows the 100 highest transactions made between 7 and 9 am. Of note, there are 12 transactions of $100 or more, and 8 transactions of $1,000 or more. Again, since the transactions are at restuarants and bars, it would seem odd to have these large sized transactions at this time in the morning. However, it is possible the card was used to bring in breakfast for the entire office one day.
 
 *Is there a higher number of fraudulent transactions made during the 7 to 9 am time frame versus the rest of the day?*
 
@@ -34,9 +34,9 @@ Using the "small_tran_merchants" view in queries.sql, we can see the merchants w
 ![cardholder18](images/cardholder18.png)
 ![cardholder2and18](images/cardholder2and18.png)
 
-Comparing consumption patterns between cardholders 2 and 18, we can see a clear difference in spending. While cardholder 2 averages purchases between $2 and \\\$20 on a consistent basis, cardholder 18 makes sporadic purchases at much larger transaction values. It is possible cardholder 18 has been a victim of fraud given these sporadic large value transactions or it is just possible cardholder 18 prefers to use cash for small value transactions and plastic for the infrequent, higher value, dinners and bar tabs.
+Comparing consumption patterns between cardholders 2 and 18, we can see a clear difference in spending. While cardholder 2 averages purchases between $2 and $20 on a consistent basis, cardholder 18 makes sporadic purchases at much larger transaction values. It is possible cardholder 18 has been a victim of fraud given these sporadic large value transactions or it is just possible cardholder 18 prefers to use cash for small value transactions and plastic for the infrequent, higher value, dinners and bar tabs.
 
 
 ![cardholder25](images/cardholder25.png)
 
-From our box plot above we can see that there quite a few outliers for cardholder 25 over the first half of 2018. Specifically, there is one outlier in January, March and May, and three in April and June. Furthermore, May appears to be rather anomalous month, with a median purchase size of ~$6 (similar to other months), but a far larger interquartile range, with the 75th percentile at \\\$270. This is likely caused by the fact there were only 5 purchases in the month of May, causing the \\$1046 outlier to greatly skew the data.
+From our box plot above we can see that there quite a few outliers for cardholder 25 over the first half of 2018. Specifically, there is one outlier in January, March and May, and three in April and June. Furthermore, May appears to be rather anomalous month, with a median purchase size of ~$6 (similar to other months), but a far larger interquartile range, with the 75th percentile at $270. This is likely caused by the fact there were only 5 purchases in the month of May, causing the $1046 outlier to greatly skew the data.
