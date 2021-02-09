@@ -12,17 +12,17 @@ The "small_tran_cardholder" view in queries.sql counts the transactions that are
 
 *Is there any evidence to suggest that a credit card has been hacked?*
 
-Given the merchants in our dataset are restuarants, bars, coffee shops, pubs, and food trucks, it is not surprising to see a fair amount of small sized transactions, and at only 10% of the data, this seems reasonable. Using the "small_tran_cardnumber" query, we can analyze such transactions by card number (as opposed to card holder) and do see that 20% of card number 376027549341849 transactions are less than $2.00. This could indicate fraud, or it could just indicate this card is used by the owner to purchase his/her daily cup of joe every morning.
+Given the merchants in our dataset are restaurants, bars, coffee shops, pubs, and food trucks, it is not surprising to see a fair amount of small sized transactions, and at only 10% of the data, this seems reasonable. Using the "small_tran_cardnumber" query, we can analyze such transactions by card number (as opposed to card holder) and do see that 20% of card number 376027549341849's transactions are less than $2.00. This could indicate fraud, or it could just indicate this card is used by the owner to purchase his/her daily cup of joe every morning.
 
 *What are the top 100 highest transactions made between 7:00 am and 9:00 am? Do you see any anomalous transactions that could be fraudulent?*
 
-The "high_tran_7to9" view in queries.sql shows the 100 highest transactions made between 7 and 9 am. Of note, there are 12 transactions of $100 or more, and 8 transactions of $1,000 or more. Again, since the transactions are at restuarants and bars, it would seem odd to have these large sized transactions at this time in the morning. However, it is possible the card was used to bring in breakfast for the entire office one day.
+The "high_tran_7to9" view in queries.sql shows the 100 highest transactions made between 7 and 9 am. Of note, there are 12 transactions of $100 or more, and 8 transactions of $1,000 or more. Again, since the transactions are at restaurants and bars, it would seem odd to have these large sized transactions at this time in the morning. However, it is possible the card was used to bring in breakfast for the entire office one day.
 
 *Is there a higher number of fraudulent transactions made during the 7 to 9 am time frame versus the rest of the day?*
 
-To compare the 7 to 9 am time frame to the rest of the day, we use "high_tran_not7to9" and see far more larger value transactions during these other times of the day. This makes sense, as the fancy, expensive corporate dinners take place later in the evening. While there are more large value transactions, it is hard to say which are fraudulent during this later time frame. Nonetheless, with 8 transactions of $1000 or more in the 7 to 9 am time frame, we can likely conclude there are more fraudulent transactions in this earlier window. 
+To compare the 7 to 9 am time frame to the rest of the day, we use "high_tran_not7to9" and see far more larger value transactions during these other times of the day. This makes sense, as the fancy, expensive corporate dinners take place later in the evening. While there are more large value transactions, it is hard to say which are fraudulent during this later time frame. Nonetheless, with 8 transactions of $1,000 or more in the 7 to 9 am time frame, we can likely conclude there are more fraudulent transactions in this earlier window. 
 
-It is possible more fraudulent transactions occur during the morning hours as fraudsters working in other parts of the world are operating during these times (https://stripe.com/guides/2017-global-fraud-report#fraud-by-day-and-time). Also, it may be that fraudsters figure people are on their way to work at these times and will not be checking their credit card activity until after work, later in the afternoon, meaning fraudulent transactions will not be detected for several hours. Though, it is hard to make definitive conclusions given our limited dataset.
+It is possible more fraudulent transactions occur during the morning hours as fraudsters working in other parts of the world are operating during these times (https://stripe.com/guides/2017-global-fraud-report#fraud-by-day-and-time). Also, it may be that fraudsters figure people are on their way to work at these times and will not be checking their credit card activity until after work, later in the afternoon, meaning fraudulent transactions will not be detected for several hours. However, it is hard to make definitive conclusions given our limited dataset.
 
 *What are the top 5 merchants prone to being hacked using small transactions?*
 
@@ -39,7 +39,7 @@ Comparing consumption patterns between cardholders 2 and 18, we can see a clear 
 
 ![cardholder25](images/cardholder25.png)
 
-From our box plot above we can see that there quite a few outliers for cardholder 25 over the first half of 2018. Specifically, there is one outlier in January, March and May, and three in April and June. Furthermore, May appears to be rather anomalous month, with a median purchase size of ~$6 (similar to other months), but a far larger interquartile range, with the 75th percentile at $270. This is likely caused by the fact there were only 5 purchases in the month of May, causing the $1046 outlier to greatly skew the data.
+From our box plot above we can see that there quite a few outliers for cardholder 25 over the first half of 2018. Specifically, there is one outlier in January, March and May, and three in April and June. Furthermore, May appears to be a rather anomalous month, with a median purchase size of ~$6 (similar to other months), but a far larger interquartile range, with the 75th percentile at $270. This is likely caused by the fact there were only 5 purchases in the month of May, causing the $1046 outlier to greatly skew the data.
 
 ## Challenge
 
